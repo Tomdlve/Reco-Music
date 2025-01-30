@@ -1,1 +1,1 @@
-Projet universitair de selection musicale
+Projet universitaire de selection musicale
