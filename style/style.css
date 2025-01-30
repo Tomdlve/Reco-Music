@@ -1,0 +1,358 @@
+body {
+  background-color: rgba(103, 146, 146, 0.432);
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.headertitle{
+  background-color: rgba(64, 164, 164, 0.774);
+  border-bottom: 3px solid white;
+}
+
+#presentation{
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-out;
+}
+
+nav a:hover {
+  color: #5ae253;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-out;
+  text-decoration: underline;
+}
+
+nav ul {
+  margin-top: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
+#pochette {
+  max-width: 300px;
+  border: 1px solid black;
+}
+
+.list-musiques {
+  height: 100vh;
+}
+
+em {
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  background-color: white;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 30px;
+  border: 3px solid #000000;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  max-height: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+section:hover {
+  max-width: 700px;
+  width: 700px;
+  transition: all 0.5s ease-out;
+}
+
+section:hover:nth-child(2n) {
+  color: #399634;
+  border: 5px solid #399634;
+  transition: all 0.5s ease-out;
+}
+
+
+section:hover:nth-child(2n + 1) {
+  color: #e62626;
+  border: 5px solid #e62626;
+  transition: all 0.5s ease-out;
+}
+
+li img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+li {
+  display: inline-block;
+  margin: auto;
+}
+
+.list-nonclick {
+  margin: 0;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.541);
+  padding-top: 10px;
+}
+
+
+#overlay::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;  
+  height: 200%; 
+  background-image: url("../img/vinyle.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: contain; 
+  opacity: 0.5;
+  z-index: -1;
+  animation: rotatationVinyle 10s linear infinite; 
+}
+
+/*Code pour faire tourner le vinyle en fond (aidé de https://www.w3schools.com/cssref/atrule_keyframes.php pour le réaliser)*/
+@keyframes rotatationVinyle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Overlay content */
+#overlay-content {
+  background-color: white;
+  margin: 20px auto;
+  margin-top : 0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  height: fit-content;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  width: 900px;
+  text-align: center;
+  z-index: 3;
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:required {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+#overlay-content h2  {
+  text-align: center;
+  margin-left: 90px; 
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#overlay-content p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#overlay-content #pochette {
+  max-width: 200px; 
+  border: none;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+
+
+#overlay-content audio {
+  display: none;
+}
+
+.audio-button {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  color: #000000;
+  border: 5px #000000a9 solid;
+  text-align: center;
+  cursor: pointer;
+}
+
+.audio-button:hover {
+  background-color: rgb(82, 78, 78);
+  transition: all 0.1s ease-out;
+  border: 5px solid rgb(121, 116, 134);
+  color: rgb(255, 255, 255);
+}
+
+
+.close-button {
+  background-color: transparent;
+  border: 2px solid #000; 
+  border-radius: 50%;
+  font-size: 1.6rem; 
+  color: #000; 
+  width: 44px; 
+  height: 44px; 
+  display: flex;
+  justify-content: center;
+  float: right;
+  cursor: pointer; 
+  margin-right: 40px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.close-button:hover {
+  background-color: #f00; 
+  color: white; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 auto;
+  width: 80%; 
+}
+
+.left-column {
+  width: 45%; 
+}
+
+.right-column {
+  width: 45%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="url"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+input[type=file] {
+  text-align: center;
+}
+
+input[type=button]{
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 10%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type=button]:hover {
+  background-color: #4CAF50;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+footer {
+  background-color: black;
+  color: white;
+  border-top: 3px solid white;
+}
+
+footer p {
+  margin: 0;
+}
+
+#formulaire-section {
+  display: none;
+  margin-top: 20px;
+
+}
+
+#formButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: block; 
+  margin: auto; 
+  margin-bottom: 30px;
+  margin-top: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#formButton:hover {
+  background-color: #4CAF50;
+  transition: background-color 0.3s, color 0.3s;
+}
+

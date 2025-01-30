@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <title>Reco'Music</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="headertitle">
+        <h1>Liste de musique de Delavigne Tom</h1>
+        <p id="presentation">Voici une sélection de 5 musiques que j'adore !<br> C'est évidemment suggestif ! <br> Vous pourrez retrouver un petit extrait de 15 secondes ainsi que les plateformes où vous pourrez l'écouter en entier !<br> Et tout en bas de la page, vous pourrez même me proposer vos propres suggestions ! </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a> &#8741</li>
+                <li><a href="index.html">Liste musicale</a> &#8741</li>
+                <li><a href="#">Liste cuisine</a> &#8741</li>
+                <li><a href="#">Liste jeux vidéo</a> &#8741</li>
+                <li><a href="#">Liste film</a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+    <div class="list-nonclick"></div>
+    <div id="overlay">
+        <div id="overlay-content"></div>
+    </div>
+    
+    <!-- Bouton pour afficher/masquer le formulaire -->
+    <button id="formButton" aria-label="Boutton affichage formulaire">Afficher le formulaire d'ajout</button>
+    
+
+
+
+
+        <!-- Section du formulaire pour prévisualiser-->
+        <div id="formulaire-section">
+            <p>* La section n'est pas cliquable lors de l'ajout d'une nouvelle musique, attendez de l'envoyer pour le prévisualiser en entier il sera uniquement visible par vous, il sera ensuite vérifié pour potentiellement être ajouté au site!</p>
+            <section>
+                <p id="nominput"></p>
+                <p id="imageinput"></p>
+            </section>
+
+        <h2>Maintenant, vous pouvez ajouter une musique en remplissant le formulaire ci-dessous ! <br> Veuillez à bien remplir tout le formulaire ! Veuillez à bien lire les mentions légales avant de compléter le formulaire !</h2>
+
+        <!-- Formulaire  -->
+        <form action="#">
+            <div class="form-container">
+                <div class="left-column">
+                    <label for="mail">Votre mail * </label>
+                    <input type="email" name="mail" id="mail" placeholder="testmail@mail.fr" aria-describedby="Entrez votre mail" required><br><br>
+                    <label for="nom">Nom de la musique (20 caractères): * </label>
+                    <input type="text" name="nom" id="nom" placeholder="Ex: Super Danse" aria-describedby="Entrez le nom de la musique" maxlength="20"  required><br><br>
+
+                    <label for="fichierimage">Lien vers l'image pour la musique : *</label>
+                    <input type="url" id="fichierimage" placeholder="Ex: https://imagealbum.fr/album32.png" aria-describedby="Entrez le lien vers l'image" required><br><br>
+
+                    <label for="fichieraudio">Choisir le fichier audio (durée max 15secondes) : *</label>
+                    <input type="file" id="fichieraudio" aria-describedby="Mettez un fichier audio " required> <br><br>
+
+                    <label for="urlspotify">Entrez un lien spotify : </label>
+                    <input type="url" name="url" id="urlspotify" aria-describedby="Entrez un lien vers spotify"><br><br>
+                </div>
+
+                <div class="right-column">
+                    <label for="urlytb">Entrez un lien youtube : </label>
+                    <input type="url" name="url" id="urlytb" aria-describedby="Entrez un lien vers youtube"><br><br>
+
+                    <label for="urlapple">Entrez un lien applemusic : </label>
+                    <input type="url" name="url" id="urlapple" aria-describedby="Entrez un lien applemusic"><br><br>
+
+                    <label for="description">Avis (100 caractères): *</label>
+                    <textarea name="description" id="description" placeholder="Ex: Une superbe musique !" aria-describedby="Entrez votre avis" maxlength="100" cols="40" required></textarea><br><br>
+
+                    <label for="credits">Crédits (50 caractères): *</label>
+                    <input type="text" name="credits" id="credits" placeholder="Ex: Delavigne Tom, tous droits réservés" maxlength="50" aria-describedby="Entrez les crédits de la musique" required><br><br>
+                    <label for="categorie">Catégorie (25 caractères) : *</label>
+                    <input type="text" name="categorie" id="categorie" placeholder="Ex: Musique Pop 90" aria-describedby="Entrez la catégorie" maxlength="25" required><br><br>
+                </div>
+            </div>
+            <div class="submit-container">
+                <input type="button" value="Envoyer" aria-label="boutton envoie formulaire" id="send">
+            </div>
+        </form>
+    </div>
+
+
+
+<footer>
+    <p>Site réalisé par Delavigne Tom, étudiant en BUT MMI à l'IUT de Champs sur Marne dans le cadre de la SAE 1.05.</p>
+    <details>
+        <summary>Mentions légales et contact</summary>
+        <p>Pour me contacter :</p>
+        <p>Delavigne Tom</p>
+        <p>delavigne.tom@outlook.fr</p><br>
+        <p>Aucune des images ou vidéos ne m'appartient.</p>
+        <p>Les droits des images et de l'audio sont précisés dans chaque section.</p><br>
+        <p>Récapitulatif des détenteurs des droits :</p><br>
+        <p>© Hydeout Productions</p>
+        <p>© SQUARE ENIX CO., LTD</p>
+        <p>© Polydor (France)</p>
+        <p>© ATLUS / SEGA</p>
+        <p>© 2025 Spotify AB<p>
+        <p>© 2025 YouTube, Inc.</p>
+        <p>© 2025 Apple, Inc.</p><br>
+        <p>Tout le contenu présent sur ce site est utilisé à des fins éducatives et non commerciales. Il reste la propriété de leurs détenteurs respectifs.</p><br>
+        <p>Ce site contient des liens vers des plateformes tierces. Nous déclinons toute responsabilité quant au contenu ou aux politiques de confidentialité de ces plateformes.</p><br>
+        <p>Ce site est hébergé par la société SAS O2Switch, Chemin des Pardiaux, 63000 Clermont-Ferrand, France.</p>
+        <p>Téléphone : 04 44 44 60 40</p>
+        <p>Site web : www.o2switch.fr</p><br>
+        <p>Lorsque vous remplissez le formulaire, votre adresse de courriel et votre adresse IP seront conservées pendant un an au maximum, la personne responsable du traitement des données est Philippe Gambette (philippe.gambette@univ-eiffel.fr). Les données seront supprimées l'été prochain. Veuillez donc en prendre conscience et à le consentir avant toute complétion et envoi du formulaire.</p>
+    </details>
+</footer>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+
+
+
+</html>

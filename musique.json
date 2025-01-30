@@ -1,0 +1,57 @@
+[
+    {
+        "nom": "Luv(sic part.5)",
+        "description": "Cette musique me touche, car elle est sortie après la mort du compositeur. Avant son décès, la composition était déjà réalisée, il ne manquait plus que les paroles. Le chanteur de cette musique, qui est aussi le parolier, a tenu à rendre hommage, dans la première partie de la musique, à l'un de ses amis d'enfance décédé, et dans la deuxième partie, au compositeur de cette même musique. Et je trouve cela touchant, ainsi que la fin de la musique : 'Life is art, a miracle for all to see, I must tell you that you lived beautifully.'",
+        "audio": "./audio/luvsic.mp3",
+        "urlytb": "https://youtu.be/xZGJmTqS4EI?si=2Al4wtYpYTPNMzlY",
+        "urlspotify": "https://open.spotify.com/intl-fr/track/7FY4KAi2JIoPLxNPLdmnAY?si=8dd20134c13c4cad",
+        "urlapplemusic": "https://music.apple.com/fr/album/luv-sic-pt-5-feat-shing02/1361503700?i=1361503710",
+        "img": "./img/luvsicp5.jpg",
+        "credit": "© Hydeout Productions, tous droits réservés",
+        "categorie": "Jazz Hip Hop"
+    },
+    {
+        "nom": "Answers",
+        "description": "Il y a toute une histoire derrière ce jeu, notamment que la première version fut un bide, que le développement a été repris à zéro, et ils l'ont justifié dans l'histoire en créant une fin du monde. C'est la musique qui se joue durant la cinématique montrant cette fin du monde. La musique est donc représentative de la fin d'une époque, que ce soit dans le jeu ou dans la vraie vie.",
+        "audio": "./audio/answers.mp3",
+        "urlytb": "https://youtu.be/p86icWXs0CQ?si=aL2Br-fyurFIZYJI",
+        "urlspotify": "https://open.spotify.com/intl-fr/track/1aXqHzRaSr9obayyq6Xg6b?si=42656dceb5b541cf",
+        "urlapplemusic": "https://music.apple.com/fr/album/answers/948674916?i=948686060",
+        "img": "./img/ffxivmeteor.jpg",
+        "credit": "© SQUARE ENIX CO., LTD, tous droits réservés",
+        "categorie": "Video Game Music"
+    },
+    {
+        "nom": "Kaine/Salvation",
+        "description": "Cette musique est le thème d'un personnage à l'histoire triste. Elle a été harcelée lorsqu'elle était plus jeune et a perdu sa grand-mère, qui était comme une mère adoptive pour elle, lors d'un incendie. Elle représente toute la tristesse et la rage du personnage à la fois.",
+        "audio": "./audio/nier.mp3",
+        "urlytb": "https://youtu.be/FP4duz43t_A?si=CEX089RrLaLhSmj1",
+        "urlspotify": "https://open.spotify.com/intl-fr/track/65T8C91gpRHOKuWebM5qby?si=030a9adc64c84b3d",
+        "urlapplemusic": "https://music.apple.com/fr/album/kain%C3%A9-salvation/366643025?i=366643257",
+        "img": "./img/nierreplicant.jpg",
+        "credit": "© SQUARE ENIX CO., LTD, tous droits réservés",
+        "categorie": "Musique de jeu vidéo"
+    },
+    {
+        "nom": "Dès que le vent soufflera",
+        "description": "L'une des premières musiques que j'ai pu entendre de ma vie, elle a une place particulière dans mon cœur. C'est la première qui m'a réellement marqué, et je continue toujours à l'écouter avec autant de plaisir.",
+        "audio": "./audio/renaud.mp3",
+        "urlytb": "https://youtu.be/YbrjsjEaOVg?si=5adE5SGzu4drlSlQ",
+        "urlspotify": "https://youtu.be/xZGJmTqS4EI?si=2Al4wtYpYTPNMzlY",
+        "urlapplemusic": "https://music.apple.com/fr/album/d%C3%A8s-que-le-vent-soufflera/1443235827?i=1443235833",
+        "img": "./img/renaud.jpg",
+        "credit": "© Polydor (France), tous droits réservés",
+        "categorie": "Musique Française"
+    },
+    {
+        "nom": "Beneath the Mask",
+        "description": "J'aime énormément cette musique, elle me permet de me détendre tant elle est calme. Dans le contexte du jeu, on l'entend énormément, et surtout lors des moments de \"vie\". Donc, lorsque je l'écoute dans des moments un peu plus calmes, ça me rappelle ces doux instants et ça me relaxe énormément. ",
+        "audio": "./audio/persona.mp3",
+        "urlytb": "https://www.youtube.fr",
+        "urlspotify": "https://open.spotify.com/intl-fr/track/5XLXrm5JVMdOus1fWmTOFw?si=de877282a8a340ca",
+        "urlapplemusic": "https://music.apple.com/fr/album/beneath-the-mask/1226945984?i=1226946499",
+        "img": "./img/persona.jpg",
+        "credit": "© ATLUS / SEGA, tous droits réservés",
+        "categorie": "Musique de jeu vidéo"
+    }
+]
